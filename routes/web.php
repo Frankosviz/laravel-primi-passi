@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/hello_world', function () {
+    return view('hello');
+});
+
+Route::get('/prova_dati', function () {
+    $data = [
+        'name' => 'Marco',
+        'surname' => 'Pappalardo',
+        'eta' => 25,
+        'luogo' => 'Roma',
+        'framework' => 'Laravel',
+    ];
+    return view('prova', $data);
+});
