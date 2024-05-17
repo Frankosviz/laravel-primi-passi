@@ -23,10 +23,10 @@ Route::get('/hello_world', function () {
 
 Route::get('/prova_dati', function () {
     $data = [
-        'name' => 'Marco',
-        'surname' => 'Pappalardo',
+        'name' => 'Carolina',
+        'surname' => 'Rossi',
         'eta' => 25,
-        'luogo' => 'Roma',
+        'luogo' => 'Benevento',
         'framework' => 'Laravel',
     ];
     return view('prova', $data);
